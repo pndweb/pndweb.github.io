@@ -1,0 +1,247 @@
+---
+title: 'Ferienwohnung Düne | Graal-Müritz'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/landing.jpg'
+permalink: '/'
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="stylesheet" href="/assets/css/critical.css" />
+
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+
+    <a id="page-home"></a> <!-- ID used as internal link --> 
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-444">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-tag">Graal-Müritz</span>
+                <h1 class="cs-title">Ferienwohnung Düne</h1>
+                <p class="cs-text">
+                    Erleben Sie pure Entspannung in unserer traumhaften Unterkunft – nur 500 Meter vom Strand entfernt, mit einer geräumigen Terrasse, freier Sicht auf das idyllische Gartenpanorama und den malerischen Blick auf das Moor.
+                </p>
+            </div>
+            <a href="#sbs-1006" class="cs-cta">
+                <!--Arrow Right-->
+                <svg class="cs-arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill="#FAFBFC" d="M24.55 31.367c-.317 0-.633-.117-.883-.367a1.258 1.258 0 0 1 0-1.767L32.9 20l-9.233-9.233a1.258 1.258 0 0 1 0-1.767 1.258 1.258 0 0 1 1.766 0L35.55 19.117a1.258 1.258 0 0 1 0 1.766L25.433 31c-.25.25-.566.367-.883.367Z"/><path fill="#FAFBFC" d="M34.383 21.25H6.333A1.26 1.26 0 0 1 5.083 20c0-.683.567-1.25 1.25-1.25h28.05c.684 0 1.25.567 1.25 1.25a1.26 1.26 0 0 1-1.25 1.25Z"/></svg>
+                <!--Wrapped in a span so it can be animated-->
+                <span class="cs-cta-text">Zur Buchung</span>
+            </a>
+        </div>
+
+        <!-- Background Image -->
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="/assets/images/hero/beach-covered-grass-surrounded-by-sea-during-sunset-perfect-wallpapers_h.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/hero/beach-covered-grass-surrounded-by-sea-during-sunset-perfect-wallpapers_m.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/hero/beach-covered-grass-surrounded-by-sea-during-sunset-perfect-wallpapers_h.jpg" alt="leaf" width="1920" height="1000" aria-hidden="true">
+        </picture>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!--                  Gallery                     -->
+    <!-- ============================================ -->
+
+    <section id="gallery-jp">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Ferienwohnung Düne</span>
+                <h2 class="cs-title">Galerie</h2>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture cs-picture-1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/fewo/Wohnen3.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/fewo/Wohnen3.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/fewo/Wohnen3.jpg" alt="Wohnzimmer" width="380" height="271">
+                </picture>
+                <picture class="cs-picture cs-picture-2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/fewo/Bett1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/fewo/Bett1.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/fewo/Bett1.jpg" alt="schlafzimmer" width="380" height="271">
+                </picture>
+                <picture class="cs-picture cs-picture-3">
+                    <source media="(max-width: 600px)" srcset="/assets/images/fewo/Aussen.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/fewo/Aussen.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/fewo/Aussen.jpg" alt="Aussenansicht" width="780" height="582">
+                </picture>
+                <picture class="cs-picture cs-picture-4">
+                    <source media="(max-width: 600px)" srcset="/assets/images/fewo/Wohnen2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/fewo/Wohnen2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/fewo/Wohnen2.jpg" alt="Wohnzimmer" width="780" height="582">
+                </picture>
+                <picture class="cs-picture cs-picture-5">
+                    <source media="(max-width: 600px)" srcset="/assets/images/fewo/Kueche1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/fewo/Kueche1.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/fewo/Kueche1.jpg" alt="Kueche" width="380" height="271">
+                </picture>
+                <picture class="cs-picture cs-picture-6">
+                    <source media="(max-width: 600px)" srcset="/assets/images/fewo/Bad1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/fewo/Aussen2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/fewo/Bad1.jpg" alt="Badezimmer" width="380" height="271">
+                </picture>
+            </div>
+        </div>
+    </section>
+                                                                    
+                                
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-20">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Ferienwohnung Düne</span>
+                <h2 class="cs-title">Informationen</h2>
+                <p class="cs-text">
+                    Die freundliche 2-Zimmer-Wohnung im Erdgeschoss bietet eine helle und angenehme Atmosphäre.
+                    Mit großzügigen 43m<sup>2</sup> ist sie ein behaglicher Rückzugsort für bis zu 4 Personen. 
+                    Der feinsandige Ostseestrand liegt nur einen kurzen Spaziergang entfernt. 
+                    Die zentrale Lage macht die Wohnung auch zu einem praktischen Ausgangspunkt Ausflüge, etwa für Radtouren auf den Darß oder für Wanderungen durch das Ribnitzer Moor. 
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/fewo/icons/bedroom.svg" alt="pinwheel icon" width="68" height="68" aria-hidden="true">
+                    <h3 class="cs-h3">Platz für 4 Personen</h3>
+                    <!--
+                    <p class="cs-item-text">
+                        Schlafzimmer mit Doppelbett und große Schlafcouch im Wohnzimmer.
+                    </p>-->
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/fewo/icons/terrace.svg" alt="leaf icon" width="68" height="68" aria-hidden="true">
+                    <h3 class="cs-h3">Terrasse mit Garten</h3>
+                    <!--
+                    <p class="cs-item-text">
+                        Mit Blick auf den Garten und das Moor können Sie hier die Seele baumeln lassen.
+                    </p> -->
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/fewo/icons/vacations_c.svg" alt="bubble wheel" width="68" height="68" aria-hidden="true">
+                    <h3 class="cs-h3">500m zum Strand</h3>
+                    <!--
+                    <p class="cs-item-text">
+                        Nach wenigen Minuten entlang des Moores sind Sie schon am Strand.
+                    </p> -->
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/fewo/icons/kitchen.svg" alt="pinwheel icon" width="68" height="68" aria-hidden="true">
+                    <h3 class="cs-h3">Offene Küche und großes Bad</h3>
+                    <!--
+                    <p class="cs-item-text">
+                        Voll ausgestattete Küche mit Geschirrspülmaschine, Herd, Kühlschrank, Kaffeemaschine, Toaster etc. 
+                    </p> -->
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/fewo/icons/parking-car.svg" alt="leaf graphic" width="68" height="68" aria-hidden="true">
+                    <h3 class="cs-h3">Privater Parkplatz</h3>
+                    <!--
+                    <p class="cs-item-text">
+                        Privater Stellplatz direkt am Haus.
+                    </p> -->                
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/fewo/icons/wifi.svg" alt="bubble wheel icon" width="68" height="68" aria-hidden="true">
+                    <h3 class="cs-h3">WLAN und Satelliten-TV</h3>
+                    <!--
+                    <p class="cs-item-text"></p> -->
+                    <!-- <a aria-label="read more about (blank)" href="" class="cs-link">Read More</a> -->
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!--              Side By Side - Buchung          -->
+    <!-- ============================================ -->
+
+    <section id="sbs-1006">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Desktop-->
+                    <source media="(min-width: 1024px)" srcset="/assets/images/cta/group-women-friends-cafe-are-looking-laptop_h.jpg">
+                    <!--Tablet-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/cta/group-women-friends-cafe-are-looking-laptop_m.jpg">
+                    <!--Mobile-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/cta/group-women-friends-cafe-are-looking-laptop_m.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/cta/group-women-friends-cafe-are-looking-laptop_m.jpg" alt="beef" width="522" height="461" aria-hidden="true">
+                </picture>
+                <!-- <img class="cs-seal" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/seal2.svg" alt="seal" width="190" height="182"> -->
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Ferienwohnung Düne</span>
+                <h2 class="cs-title">Buchung</h2>
+                <p class="cs-text">
+                    Die Buchung Ihres perfekten Feriendomizils erfolgt bequem über unseren Vermietungspartner <i>Strandsommer GmbH</i>, ansässig im Zentrum von Graal-Müritz.
+                    <!--Creates the space between p tags on mobile-->
+                    <span class="cs-spacer"></span>
+                    Dort finden Sie weitere Informationen zur Wohnung, Verfügbarkeit und die attraktiven Preise.
+                    <!-- Hier erhalten Sie bei Anreise auch Ihren Schlüssel zur Ferienwohnung. -->
+                </p>
+                <a href="https://www.strandsommer.de/Ostseeheilbad/Graal-Mueritz/B5" class="cs-button-solid" target="_blank" rel="noopener noreferrer nofollow">Jetzt buchen</a>
+            </div>
+        </div>
+    </section>
+                                    
+
+    <!-- ============================================ -->
+    <!--                     CTA                      -->
+    <!-- ============================================ -->
+
+    <!--
+    <section id="cta-51">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Ferienwohnung Düne</span>
+                <h2 class="cs-title">Zur Buchung</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis at sit pellentesque molestie.  Diam, adipiscing ultrices eu turpis gravida.
+                </p>
+                <a href="" class="cs-button-solid">Gret A Free Quote</a>
+            </div>
+        </div>
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets-m.jpg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets.jpg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets.jpg" alt="cabinets" width="1920" height="1280" aria-hidden="true">
+        </picture>
+    </section>
+    -->
+                                
+
+
+    
+{% endblock %}

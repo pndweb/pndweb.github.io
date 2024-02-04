@@ -1,0 +1,15 @@
+{
+    "name": "Urlaub",
+    "email": "adm@ferienwohnung-duene.de",
+    "phoneForTel": "0341-98039",
+    "phoneFormatted": "(+49) 391 98039",
+    "address": {
+        "lineOne": "First Address Line",
+        "lineTwo": "Second Address Line",
+        "city": "Graal-Müritz",
+        "state": "COA",
+        "zip": "80206",
+        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+    },
+    "domain": "https://ferienwohnung-duene.de"
+}

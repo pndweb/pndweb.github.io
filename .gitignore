@@ -1,0 +1,5 @@
+.vscode
+.cache
+node_modules
+public
+/web_fewo_duene.code-workspace
