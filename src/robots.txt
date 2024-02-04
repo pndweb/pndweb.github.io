@@ -1,5 +1,7 @@
 User-agent: *
 Disallow: /admin/
+Disallow: /imprint/
+Disallow: /privacy/
 Allow: /
 
-Sitemap: https://www.yourwebsite.com/sitemap.xml
+Sitemap: https://www.pndweb.github.io/sitemap.xml
