@@ -5,7 +5,7 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #ffba19;
+    --primary: #ce6e00 ;
     --primaryLight: #ffd675;
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
@@ -576,7 +576,7 @@
   #cs-navigation .cs-container {
     width: 100%;
     /* same height as the cs-ul-wrapper */
-    height: 6.3125rem;
+    height: 6.5625rem;
     max-width: 80rem;
     margin: auto;
     display: flex;
@@ -626,6 +626,31 @@
     padding: 2.5rem 0;
     /* prevent flexbox from squishing it */
     flex: none;
+  }
+  #cs-navigation .cs-link {
+    /* 15px - 17px */
+    font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--bodyTextColor);
+    position: relative;
+  }
+  #cs-navigation .cs-link:hover:before {
+    width: 100%;
+  }
+  #cs-navigation .cs-link:before {
+    /* top right box */
+    content: "";
+    width: 0%;
+    height: 0.1875rem;
+    background: var(--bodyTextColorWhite);
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: -0.125rem;
+    left: 0;
+    transition: width 0.3s;
   }
   #cs-navigation .cs-li-link {
     /* 14px - 16px */
@@ -678,7 +703,6 @@
     min-width: 9.375rem;
     padding: 0 2rem;
     background-color: transparent;
-    border: 1px solid var(--primary);
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -723,6 +747,9 @@
   }
   body.dark-mode #cs-navigation .cs-ul-wrapper {
     background-color: var(--headerColorDark);
+  }
+  body.dark-mode #cs-navigation .cs-link {
+    color: var(--bodyTextColorWhite);
   }
   body.dark-mode #cs-navigation .cs-li-link {
     color: var(--bodyTextColorWhite);

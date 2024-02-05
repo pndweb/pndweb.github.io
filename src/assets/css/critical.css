@@ -112,7 +112,7 @@
     height: clamp(8.8125rem, 17vw, 12.25rem);
     margin-left: auto;
     background-color: var(--primary);
-    color: #fff;
+    color: #000000;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -125,7 +125,7 @@
   }
   #hero-444 .cs-cta:hover {
     background-color: var(--bodyTextColorWhite);
-    color: var(--primary);
+    color: #000000;
   }
   #hero-444 .cs-cta:hover .cs-arrow {
     transform: translateX(3.75rem);

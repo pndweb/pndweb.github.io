@@ -122,7 +122,8 @@
             height: clamp(8.8125rem, 17vw, 12.25rem);
             margin-left: auto;
             background-color: var(--primary);
-            color: #fff;
+            //color: #fff;
+            color: #000000;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -137,7 +138,8 @@
 
             &:hover {
                 background-color: var(--bodyTextColorWhite);
-                color: var(--primary);
+                //color: var(--primary);
+                color: #000000;
                 .cs-arrow {
                     transform: translateX(3.75rem);
                     opacity: 0;
