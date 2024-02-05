@@ -122,7 +122,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #services-20 .cs-topper {
-    color: var(--primary);
+    color: var(--bodyTextColorWhite);
   }
   body.dark-mode #services-20 .cs-title,
   body.dark-mode #services-20 .cs-text,
@@ -261,6 +261,14 @@
   #gallery-jp .cs-picture-6 {
     grid-column: 10/span 3;
     grid-row: 3/span 1;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #gallery-jp .cs-title,
+  body.dark-mode #gallery-jp .cs-text,
+  body.dark-mode #gallery-jp .cs-topper {
+    color: var(--bodyTextColorWhite);
   }
 }
 /*-- -------------------------- -->
@@ -439,7 +447,8 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #sbs-1006 .cs-title,
-  body.dark-mode #sbs-1006 .cs-text {
+  body.dark-mode #sbs-1006 .cs-text,
+  body.dark-mode #sbs-1006 .cs-topper {
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #sbs-1006 .cs-text {
