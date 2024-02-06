@@ -507,8 +507,9 @@ html {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     z-index: 10;
+    opacity: 0;
   }
   #cs-navigation .cs-logo img {
     width: 100%;
@@ -704,7 +705,7 @@ html {
     opacity: var(--headerOpacity);
   }
   body.dark-mode #cs-navigation .cs-logo {
-    /* makes it white */
+    /* makes the logo white */
     opacity: 0;
   }
   body.dark-mode #cs-navigation .cs-line {

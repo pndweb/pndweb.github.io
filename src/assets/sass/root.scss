@@ -618,8 +618,10 @@ html {
             box-sizing: border-box;
             display: flex;
             justify-content: center;
-            align-items: left;
+            align-items: center;
             z-index: 10;
+            //Hide logo in mobile view
+            opacity: 0;
 
             img {
                 width: 100%;
@@ -853,8 +855,9 @@ html {
             }
 
             .cs-logo {
-                /* makes it white */
+                /* makes the logo white */
                 //filter: grayscale(1) brightness(1000%);
+                //Hide logo in mobile view
                 opacity: 0;
             }
 
