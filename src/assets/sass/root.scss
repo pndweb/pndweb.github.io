@@ -618,7 +618,7 @@ html {
             box-sizing: border-box;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: left;
             z-index: 10;
 
             img {
@@ -855,6 +855,7 @@ html {
             .cs-logo {
                 /* makes it white */
                 //filter: grayscale(1) brightness(1000%);
+                opacity: 0;
             }
 
             .cs-line {

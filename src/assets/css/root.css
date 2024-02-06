@@ -507,7 +507,7 @@ html {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     z-index: 10;
   }
   #cs-navigation .cs-logo img {
@@ -705,6 +705,7 @@ html {
   }
   body.dark-mode #cs-navigation .cs-logo {
     /* makes it white */
+    opacity: 0;
   }
   body.dark-mode #cs-navigation .cs-line {
     background-color: #fff;
