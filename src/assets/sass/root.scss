@@ -420,9 +420,10 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
     #int-hero-imprint {
-        min-height: 10vh;
-        max-height: 20vh;
-        padding-top: calc(25 / 16 * 1rem);
+        //min-height: 25vh;
+        //max-height: 30vh;
+        height: auto;
+        padding-top: calc(45 / 16 * 1rem);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -462,7 +463,7 @@
         }
 
         h1 {
-            font-size: calc(64 / 30 * 1rem);
+            font-size: calc(44 / 30 * 1rem);
             text-align: center;
             width: 96%;
             max-width: calc(500 / 16 * 1rem);
@@ -491,7 +492,7 @@
         font-size: 100%;
 
         h1 {
-            font-size: calc(64 / 16 * 1rem);
+            font-size: calc(44 / 16 * 1rem);
         }
     }
 }
@@ -501,10 +502,11 @@
     #int-hero-imprint {
         font-size: inherit;
         height: auto;
-        min-height: calc(250 / 16 * 1rem);
-        padding-top: calc(130 / 16 * 1rem);
+        //min-height: calc(250 / 16 * 1rem);
+        //padding-top: calc(130 / 16 * 1rem);
+        padding-top: calc(55 / 16 * 1rem);
         background-attachment: fixed;
-        padding-block-end: calc(100 / 16 * 1rem);
+        padding-block-end: calc(5 / 16 * 1rem);
     }
 }
 
