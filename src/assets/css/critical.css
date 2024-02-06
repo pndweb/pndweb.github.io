@@ -10,7 +10,7 @@
     /* 144px - 300px - leaving extra space for the navigation */
     padding: clamp(9rem, 25.95vw, 19.75rem) 1rem 0;
     /* 100px - 300px */
-    padding-bottom: clamp(6.25rem, 19.5vw, 28.75rem);
+    padding-bottom: clamp(12.25rem, 19.5vw, 28.75rem);
     position: relative;
     z-index: 1;
   }
