@@ -6,6 +6,7 @@
 @media only screen and (min-width: 0rem) {
   #services-20 {
     padding: var(--sectionPadding);
+    background-color: #f7f7f7;
   }
   #services-20 .cs-container {
     width: 100%;
@@ -325,8 +326,9 @@
     color: #000000;
     min-width: 9.375rem;
     padding: 0 2rem;
-    background-color: transparent;
+    background-color: var(--primary);
     border: 1px solid;
+    border-color: var(--primary);
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -338,9 +340,7 @@
     position: absolute;
     height: 100%;
     width: 0%;
-    background: var(--primary);
-    border: 0px solid;
-    border-color: var(--primary);
+    background: #ffffff;
     opacity: 1;
     top: 0;
     left: 0;
