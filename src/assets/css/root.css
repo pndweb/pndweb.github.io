@@ -421,6 +421,122 @@
   }
 }
 /*-- -------------------------- -->
+<---         Footer 104         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cs-footer-104 {
+    /* 40px - 100px top and bottom */
+    padding: clamp(2.5rem, 7.9vw, 6.25rem) 1rem;
+    /* 40px - 50px */
+    padding-bottom: clamp(2.5rem, 7.9vw, 3.125rem);
+    background-color: #14142b;
+    background: #1a1a1a;
+  }
+  #cs-footer-104 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+  }
+  #cs-footer-104 .cs-ul {
+    /* 40px - 60px*/
+    padding: 0 0 clamp(2.5rem, 4.7vw, 3.75rem);
+    margin: auto;
+    border-bottom: 1px solid #7d799c;
+  }
+  #cs-footer-104 .cs-li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+  #cs-footer-104 .cs-li:last-of-type {
+    margin-bottom: 0;
+  }
+  #cs-footer-104 .cs-link {
+    /* 16px - 20px */
+    /* 15px - 17px */
+    font-size: clamp(0.875rem, 0.6vw, 1rem);
+    line-height: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--bodyTextColorWhite);
+    position: relative;
+  }
+  #cs-footer-104 .cs-link:hover:before {
+    width: 100%;
+  }
+  #cs-footer-104 .cs-link:before {
+    /* top right box */
+    content: "";
+    width: 0%;
+    height: 0.1875rem;
+    background: var(--bodyTextColorWhite);
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: -0.125rem;
+    left: 0;
+    transition: width 0.3s;
+  }
+  #cs-footer-104 .cs-link-imprint {
+    /* 15px - 17px */
+    /* 15px - 17px */
+    font-size: clamp(0.875rem, 0.6vw, 1rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    font-weight: 1;
+    color: #a0a3bd;
+    position: relative;
+  }
+  #cs-footer-104 .cs-link-imprint:hover:before {
+    width: 100%;
+  }
+  #cs-footer-104 .cs-link-imprint:before {
+    /* top right box */
+    content: "";
+    width: 0%;
+    height: 0.1875rem;
+    background: var(--bodyTextColorWhite);
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: -0.125rem;
+    left: 0;
+    transition: width 0.3s;
+  }
+  #cs-footer-104 .cs-copyright {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.6vw, 1rem);
+    text-align: center;
+    color: #b4b2c7;
+    display: block;
+    /* 20px - 28px */
+    margin: clamp(1.25rem, 2.8vw, 1.75rem) auto 0;
+  }
+}
+/* Tablet - 720px */
+@media only screen and (min-width: 45rem) {
+  #cs-footer-104 .cs-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #cs-footer-104 .cs-li {
+    /* 44px - 88px */
+    margin: 0 clamp(2.75rem, 6.2vw, 5.5rem) 0 0;
+  }
+  #cs-footer-104 .cs-li:last-of-type {
+    margin: 0;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #cs-footer-104 {
+    background-color: #000;
+  }
+}
+/*-- -------------------------- -->
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
 body,
@@ -739,6 +855,8 @@ html {
     -webkit-backdrop-filter: blur(27px);
     backdrop-filter: blur(27px);
     position: fixed;
+    display: flex;
+    align-items: center;
     z-index: 10000;
   }
   #cs-navigation:before {
@@ -763,6 +881,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1.5rem;
     position: relative;
     box-sizing: border-box;
     padding: 0 1.5rem;
@@ -907,122 +1026,6 @@ html {
   }
   body.dark-mode #cs-navigation .cs-button-solid {
     color: var(--bodyTextColorWhite);
-  }
-}
-/*-- -------------------------- -->
-<---         Footer 104         -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #cs-footer-104 {
-    /* 40px - 100px top and bottom */
-    padding: clamp(2.5rem, 7.9vw, 6.25rem) 1rem;
-    /* 40px - 50px */
-    padding-bottom: clamp(2.5rem, 7.9vw, 3.125rem);
-    background-color: #14142b;
-    background: #1a1a1a;
-  }
-  #cs-footer-104 .cs-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-  }
-  #cs-footer-104 .cs-ul {
-    /* 40px - 60px*/
-    padding: 0 0 clamp(2.5rem, 4.7vw, 3.75rem);
-    margin: auto;
-    border-bottom: 1px solid #7d799c;
-  }
-  #cs-footer-104 .cs-li {
-    list-style: none;
-    text-align: center;
-    margin-bottom: 1.25rem;
-  }
-  #cs-footer-104 .cs-li:last-of-type {
-    margin-bottom: 0;
-  }
-  #cs-footer-104 .cs-link {
-    /* 16px - 20px */
-    /* 15px - 17px */
-    font-size: clamp(0.875rem, 0.6vw, 1rem);
-    line-height: 1.2em;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: var(--bodyTextColorWhite);
-    position: relative;
-  }
-  #cs-footer-104 .cs-link:hover:before {
-    width: 100%;
-  }
-  #cs-footer-104 .cs-link:before {
-    /* top right box */
-    content: "";
-    width: 0%;
-    height: 0.1875rem;
-    background: var(--bodyTextColorWhite);
-    opacity: 1;
-    position: absolute;
-    display: block;
-    bottom: -0.125rem;
-    left: 0;
-    transition: width 0.3s;
-  }
-  #cs-footer-104 .cs-link-imprint {
-    /* 15px - 17px */
-    /* 15px - 17px */
-    font-size: clamp(0.875rem, 0.6vw, 1rem);
-    line-height: 1.5em;
-    text-decoration: none;
-    font-weight: 1;
-    color: #a0a3bd;
-    position: relative;
-  }
-  #cs-footer-104 .cs-link-imprint:hover:before {
-    width: 100%;
-  }
-  #cs-footer-104 .cs-link-imprint:before {
-    /* top right box */
-    content: "";
-    width: 0%;
-    height: 0.1875rem;
-    background: var(--bodyTextColorWhite);
-    opacity: 1;
-    position: absolute;
-    display: block;
-    bottom: -0.125rem;
-    left: 0;
-    transition: width 0.3s;
-  }
-  #cs-footer-104 .cs-copyright {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.6vw, 1rem);
-    text-align: center;
-    color: #b4b2c7;
-    display: block;
-    /* 20px - 28px */
-    margin: clamp(1.25rem, 2.8vw, 1.75rem) auto 0;
-  }
-}
-/* Tablet - 720px */
-@media only screen and (min-width: 45rem) {
-  #cs-footer-104 .cs-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #cs-footer-104 .cs-li {
-    /* 44px - 88px */
-    margin: 0 clamp(2.75rem, 6.2vw, 5.5rem) 0 0;
-  }
-  #cs-footer-104 .cs-li:last-of-type {
-    margin: 0;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #cs-footer-104 {
-    background-color: #000;
   }
 }
 

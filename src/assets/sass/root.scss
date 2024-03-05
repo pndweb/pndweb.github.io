@@ -514,6 +514,162 @@
 
 
 
+
+
+
+/*-- -------------------------- -->
+<---         Footer 104         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cs-footer-104 {
+        /* 40px - 100px top and bottom */
+        padding: clamp(2.5rem, 7.9vw, 6.25rem) calc(16 / 16 * 1rem);
+        /* 40px - 50px */
+        padding-bottom: clamp(2.5rem, 7.9vw, 3.125rem);
+        background-color: #14142b;
+        background: #1a1a1a;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+        }
+
+        .cs-ul {
+            /* 40px - 60px*/
+            padding: 0 0 clamp(2.5rem, 4.7vw, 3.75rem);
+            margin: auto;
+            border-bottom: 1px solid #7d799c;
+        }
+
+        .cs-li {
+            list-style: none;
+            text-align: center;
+            margin-bottom: calc(20 / 16 * 1rem);
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        .cs-link {
+            /* 16px - 20px */
+            //font-size: clamp(1rem, 1.55vw, 1.25rem);
+            /* 15px - 17px */
+            font-size: clamp(0.875rem, 0.6vw, 1rem);
+            line-height: 1.2em;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: var(--bodyTextColorWhite);
+            position: relative;
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+
+            &:before {
+                /* top right box */
+                content: "";
+                width: 0%;
+                height: calc(3 / 16 * 1rem);
+                background: var(--bodyTextColorWhite);
+                opacity: 1;
+                position: absolute;
+                display: block;
+                bottom: calc(-2 / 16 * 1rem);
+                left: 0;
+                transition: width 0.3s;
+            }
+        }
+
+        .cs-link-imprint {
+            /* 15px - 17px */
+            //font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+            /* 15px - 17px */
+            font-size: clamp(0.875rem, 0.6vw, 1rem);
+            line-height: 1.5em;
+            text-decoration: none;
+            font-weight: 1;
+            // color: var(--bodyTextColorWhite);
+            color: #a0a3bd;
+            position: relative;
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+
+            &:before {
+                /* top right box */
+                content: "";
+                width: 0%;
+                height: calc(3 / 16 * 1rem);
+                background: var(--bodyTextColorWhite);
+                opacity: 1;
+                position: absolute;
+                display: block;
+                bottom: calc(-2 / 16 * 1rem);
+                left: 0;
+                transition: width 0.3s;
+            }
+        }
+
+        .cs-copyright {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.6vw, 1rem);
+            text-align: center;
+            color: #b4b2c7;
+            display: block;
+            /* 20px - 28px */
+            margin: clamp(1.25rem, 2.8vw, 1.75rem) auto 0;
+        }
+    }
+}
+
+/* Tablet - 720px */
+@media only screen and (min-width: 45rem) {
+    #cs-footer-104 {
+        .cs-ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cs-li {
+            /* 44px - 88px */
+            margin: 0 clamp(2.75rem, 6.2vw, 5.5rem) 0 0;
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #cs-footer-104 {
+            background-color: #000;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*-- -------------------------- -->
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
@@ -906,6 +1062,8 @@ html {
         -webkit-backdrop-filter: blur(27px);
         backdrop-filter: blur(27px);
         position: fixed;
+        display: flex; // JPA
+        align-items: center; //JPA
         z-index: 10000;
 
         &:before {
@@ -932,7 +1090,7 @@ html {
             //justify-content: flex-end;
             justify-content: space-between;
             align-items: center;
-            // gap: calc(24 / 16 * 1rem);
+            gap: calc(24 / 16 * 1rem);
             position: relative;
             box-sizing: border-box; //JPA
             padding: 0 calc(24 / 16 * 1rem); //JPA
@@ -1110,163 +1268,3 @@ html {
         }
     }
 }
-
-
-
-
-
-/*-- -------------------------- -->
-<---         Footer 104         -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #cs-footer-104 {
-        /* 40px - 100px top and bottom */
-        padding: clamp(2.5rem, 7.9vw, 6.25rem) calc(16 / 16 * 1rem);
-        /* 40px - 50px */
-        padding-bottom: clamp(2.5rem, 7.9vw, 3.125rem);
-        background-color: #14142b;
-        background: #1a1a1a;
-
-        .cs-container {
-            width: 100%;
-            max-width: calc(1280 / 16 * 1rem);
-            margin: auto;
-        }
-
-        .cs-ul {
-            /* 40px - 60px*/
-            padding: 0 0 clamp(2.5rem, 4.7vw, 3.75rem);
-            margin: auto;
-            border-bottom: 1px solid #7d799c;
-        }
-
-        .cs-li {
-            list-style: none;
-            text-align: center;
-            margin-bottom: calc(20 / 16 * 1rem);
-            &:last-of-type {
-                margin-bottom: 0;
-            }
-        }
-
-        .cs-link {
-            /* 16px - 20px */
-            //font-size: clamp(1rem, 1.55vw, 1.25rem);
-            /* 15px - 17px */
-            font-size: clamp(0.875rem, 0.6vw, 1rem);
-            line-height: 1.2em;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            color: var(--bodyTextColorWhite);
-            position: relative;
-
-            &:hover {
-                &:before {
-                    width: 100%;
-                }
-            }
-
-            &:before {
-                /* top right box */
-                content: "";
-                width: 0%;
-                height: calc(3 / 16 * 1rem);
-                background: var(--bodyTextColorWhite);
-                opacity: 1;
-                position: absolute;
-                display: block;
-                bottom: calc(-2 / 16 * 1rem);
-                left: 0;
-                transition: width 0.3s;
-            }
-        }
-
-        .cs-link-imprint {
-            /* 15px - 17px */
-            //font-size: clamp(0.9375rem, 2vw, 1.0625rem);
-            /* 15px - 17px */
-            font-size: clamp(0.875rem, 0.6vw, 1rem);
-            line-height: 1.5em;
-            text-decoration: none;
-            font-weight: 1;
-            // color: var(--bodyTextColorWhite);
-            color: #a0a3bd;
-            position: relative;
-
-            &:hover {
-                &:before {
-                    width: 100%;
-                }
-            }
-
-            &:before {
-                /* top right box */
-                content: "";
-                width: 0%;
-                height: calc(3 / 16 * 1rem);
-                background: var(--bodyTextColorWhite);
-                opacity: 1;
-                position: absolute;
-                display: block;
-                bottom: calc(-2 / 16 * 1rem);
-                left: 0;
-                transition: width 0.3s;
-            }
-        }
-
-        .cs-copyright {
-            /* 14px - 16px */
-            font-size: clamp(0.875rem, 1.6vw, 1rem);
-            text-align: center;
-            color: #b4b2c7;
-            display: block;
-            /* 20px - 28px */
-            margin: clamp(1.25rem, 2.8vw, 1.75rem) auto 0;
-        }
-    }
-}
-
-/* Tablet - 720px */
-@media only screen and (min-width: 45rem) {
-    #cs-footer-104 {
-        .cs-ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .cs-li {
-            /* 44px - 88px */
-            margin: 0 clamp(2.75rem, 6.2vw, 5.5rem) 0 0;
-            &:last-of-type {
-                margin: 0;
-            }
-        }
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #cs-footer-104 {
-            background-color: #000;
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
