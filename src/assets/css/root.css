@@ -883,21 +883,22 @@ html {
     align-items: center;
     gap: 1.5rem;
     position: relative;
-    box-sizing: border-box;
   }
   #cs-navigation .cs-toggle {
     display: none;
   }
   #cs-navigation .cs-logo {
-    width: auto;
-    height: 3.75rem;
-    /* margin-right auto pushes everything away from it to the right */
-    margin: 0 40px 0 0;
-    padding: 0px 400px 0px 0px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 100;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    background: transparent;
+    border: none;
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    left: 0.625rem;
+    z-index: 1000;
+    overflow: hidden;
   }
   #cs-navigation .cs-logo img {
     width: 100%;
