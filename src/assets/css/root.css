@@ -774,7 +774,7 @@ html {
     height: 3.75rem;
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
-    padding: 0;
+    padding: 0px 40px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
