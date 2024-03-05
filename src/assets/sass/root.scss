@@ -1093,7 +1093,7 @@ html {
             gap: calc(24 / 16 * 1rem);
             position: relative;
             box-sizing: border-box; //JPA
-            padding: 0 calc(24 / 16 * 1rem); //JPA
+            // padding: 0 calc(24 / 16 * 1rem); //JPA
         }
 
         .cs-toggle {

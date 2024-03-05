@@ -884,7 +884,6 @@ html {
     gap: 1.5rem;
     position: relative;
     box-sizing: border-box;
-    padding: 0 1.5rem;
   }
   #cs-navigation .cs-toggle {
     display: none;
