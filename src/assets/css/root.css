@@ -892,7 +892,7 @@ html {
     width: auto;
     height: 3.75rem;
     /* margin-right auto pushes everything away from it to the right */
-    margin: 0 auto 0 0;
+    margin: 0 40px 0 0;
     padding: 0px 400px 0px 0px;
     display: flex;
     justify-content: flex-start;
