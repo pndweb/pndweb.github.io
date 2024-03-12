@@ -1,2 +1,2 @@
 # pndweb.github.io
-duene
+Ferienwohnung
