@@ -1,13 +1,13 @@
 {
-    "name": "ferienwohnung Duene",
+    "name": "FeWo Düne",
     "email": "adm@ferienwohnung-duene.de",
     "phoneForTel": "",
     "phoneFormatted": "",
     "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
+        "lineOne": "",
+        "lineTwo": "",
         "city": "Graal-Müritz",
-        "state": "Germany",
+        "state": "",
         "zip": "",
         "mapLink": ""
     },
